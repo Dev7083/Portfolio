@@ -68,6 +68,12 @@
           margin-left: 0;
         }
       }
+      /* hide the github chart on mobile devices */
+      @media screen and (max-width: 400px) {
+        #chart{
+          display: none;
+        }
+      }"
     </style>
   </head>
   <body class="w3-black">
@@ -539,7 +545,7 @@
           <!-- End Portfolio Section -->
         </div>
       </div>
-      <div class="w3-padding-64 w3-content  w3-center ">
+      <div class="w3-padding-64 w3-content  w3-center " id="chart">
         <!-- Github contri calendar -->
     <img src="https://ghchart.rshah.org/dev7083" alt="Dev7083's Github chart" />
     <h4 class="w3-text-light-grey  w3-center ">Github Chart</h4>

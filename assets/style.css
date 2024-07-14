@@ -52,6 +52,21 @@ body {
   }
 }
 
-html.sr .scrollanime {
+/* html.sr .scrollanime {
   visibility: hidden;
+} */
+#slider {
+  box-sizing: content-box;
+  margin-bottom: 22vh;
+}
+.mySlides {
+  border-radius: 1vw;
+  transform: scale(1.1);
+  opacity: 1;
+  transition: 2s all ease-in-out;
+}
+.mySlides:hover {
+  filter:blur(20px)
+  transform: scale(1.1);
+  opacity: 0;
 }

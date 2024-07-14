@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="assets/style.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
   <style>
     body,
     h1,
@@ -113,8 +114,9 @@
         />
       </div>
     </header>
-
+<main>
     <!-- About Section -->
+    <section class="one scrollanime">
     <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
       <h2 class="w3-text-light-grey">Devendra Singh</h2>
       <hr style="width: 200px" class="w3-opacity" />
@@ -133,7 +135,7 @@
       <div class="w3-white">
         <div class="w3-dark-grey" style="height: 28px; width: 85%"></div>
       </div>
-      <p class="w3-wide">MERN Developer</p>
+      <p class="w3-wide">MERN Stack Developer</p>
       <div class="w3-white">
         <div class="w3-dark-grey" style="height: 28px; width: 90%"></div>
       </div>
@@ -221,17 +223,17 @@
           Collaborations
         </div>
         <div class="w3-quarter w3-section">
-          <span class="w3-xlarge">55+</span><br />
+          <span class="w3-xlarge">25+</span><br />
           Projects Done
         </div>
         <div class="w3-quarter w3-section">
           <span class="w3-xlarge">10+</span><br />
           Happy Clients
         </div>
-        <div class="w3-quarter w3-section">
+        <!-- <div class="w3-quarter w3-section">
           <span class="w3-xlarge">15+</span><br />
           Meetings
-        </div>
+        </div> -->
       </div>
 
       <button class="w3-button w3-light-grey w3-padding-large w3-section">
@@ -239,7 +241,8 @@
         <a href="./assets/resume/Devendra_Singh_Resume.pdf" download="Devendra_Singh_Resume" target="_blank"
           style="text-decoration: none">Download CV</a>
       </button>
-
+    </section>
+    <section class="two scrollanime">
       <!-- Github Stats -->
       <h3 class="w3-padding-8 w3-text-light-grey">Github Stats</h3>
       <hr style="width: 200px" class="w3-opacity" />
@@ -278,12 +281,12 @@
               <li class="w3-padding-16">Photography</li>
               <li class="w3-padding-16">5GB Storage</li>
               <li class="w3-padding-16">Mail Support</li> -->
-            <li class="w3-padding-16">
+            <!-- <li class="w3-padding-16">
               <h2>&#X20B9; 1000</h2>
               <span class="w3-opacity">per month</span>
-            </li>
+            </li> -->
             <li class="w3-light-grey w3-padding-24">
-              <button class="w3-button w3-white w3-padding-large w3-hover-black">
+              <button class="w3-button w3-white w3-padding-large w3-hover-black" onclick="sendMail()">
                 <i class="fa-regular fa-calendar-check w3-hover-opacity"></i> Hire Me !
               </button>
             </li>
@@ -296,12 +299,12 @@
             <li class="w3-padding-16">Full Stack Development</li>
             <li class="w3-padding-16">Assets & logo Designing.</li>
             <li class="w3-padding-16">Endless Support</li>
-            <li class="w3-padding-16">
+            <!-- <li class="w3-padding-16">
               <h2>&#X20B9; 2500</h2>
               <span class="w3-opacity">per month</span>
-            </li>
+            </li> -->
             <li class="w3-light-grey w3-padding-24">
-              <button class="w3-button w3-white w3-padding-large w3-hover-black">
+              <button class="w3-button w3-white w3-padding-large w3-hover-black" onclick="sendMail()">
                 <i class="fa-regular fa-calendar-check w3-hover-opacity"></i> Hire Me !
               </button>
             </li>
@@ -311,7 +314,7 @@
       </div>
 
       <!--  Testimonials -->
-      <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>
+      <h3 class="w3-padding-24 w3-text-light-grey">Testimonials</h3>
       <img src="./assets/image/ammu.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width: 80px" />
       <p>
         <span class="w3-large w3-margin-right">Amarjeet Singh.</span>
@@ -326,7 +329,9 @@
       <p>No one is better than Dev.</p>
       <!-- End About Section -->
     </div>
-
+  </section>
+  <section class="three scrollanime">
+  
     <!-- Portfolio Section -->
     <div class="w3-padding-64 w3-content" id="photos">
       <h2 class="w3-text-light-grey">Project Samples</h2>
@@ -375,8 +380,8 @@
 
       <!-- End Achivements Section -->
     </div>
-
-
+  </section>
+<section class="four scrollanime">
     <div class="w3-padding-64 w3-content" id="photos">
       <h2 class="w3-text-light-grey">Top Github Repositories</h2>
       <hr style="width: 370px" class="w3-opacity" />
@@ -425,7 +430,7 @@
         </p>
       </div>
     </div>
-
+  </main>
     <!-- Support -->
     <div class="w3-padding-64 w3-content w3-text-grey" id="support">
       <h3 class="w3-text-light-grey">Support</h3>
@@ -437,6 +442,8 @@
       </p>
       <br /><br />
     </div>
+  </section>
+  <section class="five scrollanime">
     <!-- Contact Section -->
     <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
       <h2 class="w3-text-light-grey">Contact Me</h2>
@@ -482,7 +489,7 @@
       </form>
       <!-- End Contact Section -->
     </div>
-
+  </section>
     <!-- Footer -->
     <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
       <i class="fa fa-facebook-official w3-hover-opacity"></i>

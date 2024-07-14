@@ -14,3 +14,16 @@ function carousel() {
   x[slideIndex - 1].style.display = "block";
   setTimeout(carousel, 2000); // Change image every 2 seconds
 }
+
+
+// Scroll ANImation
+// ScrollReveal().reveal(".scrollanime", { delay: 200, easing: "ease-in", origin: 'left', duration: 800 });
+ScrollReveal().reveal('.scrollanime', {
+  delay: 700,
+  distance: '50px',
+  duration: 900,
+  easing: 'ease-in-out',
+  origin: 'left',
+  reset: true,
+  mobile: true
+});

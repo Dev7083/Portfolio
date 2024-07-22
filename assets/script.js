@@ -13,7 +13,23 @@ function carousel() {
     slideIndex = 1;
   }
   x[slideIndex - 1].style.display = "block";
-  setTimeout(carousel, 3000); // Change image every 2 seconds
+  setTimeout(carousel, 5000); // Change image every 2 seconds
+}
+var textslideIndex = 0;
+textcarousel();
+
+function textcarousel() {
+  let i;
+  const x = document.getElementsByClassName("myText");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  textslideIndex++;
+  if (textslideIndex > x.length) {
+    textslideIndex = 1;
+  }
+  x[textslideIndex - 1].style.display = "block";
+  setTimeout(textcarousel, 5000); // Change image every 2 seconds
 }
 
 

@@ -30,13 +30,13 @@ ScrollReveal().reveal('.scrollanime', {
 });
 
 // Loader
-const loader = document.getElementById('loader');
-window.addEventListener("load", () => {
-  setTimeout(() => { }, 2000)
-})
+// const loader = document.getElementById('loader');
+// window.addEventListener("load", () => {
+//   setTimeout(() => { }, 2000)
+// })
 
 // Preload Images
-function preloader() {
+function pre_loader() {
   if (document.getElementById) {
     document.getElementById("img1");
     document.getElementById("img2");
@@ -58,7 +58,7 @@ function addLoadEvent(func) {
     };
   }
 }
-addLoadEvent(preloader);
+addLoadEvent(pre_loader);
 
 // Send Email
 function sendMail() {
@@ -76,3 +76,13 @@ function sendMail() {
   // Open the user's email client
   window.location.href = mailtoLink;
 }
+
+
+// Loader
+
+const preloader = document.querySelector("[data-preloader]");
+
+window.addEventListener("DOMContentLoaded", function () {
+  preloader.classList.add("loaded");
+  document.body.classList.add("loaded");
+});

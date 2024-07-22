@@ -75,18 +75,20 @@ body.loaded { overflow: overlay; }
   transition: 3s all ease-in-out;
 }
 .mySlides:hover {
-  filter:blur(20px)
+  filter:blur(20px);
   transform: scale(1.1);
   opacity: 0;
 }
-
-#loader{
-  background: #292b38 url(./image/loader.svg) no-repeat;
-  background-size: 10%;
-  height: 100vh;
-  width: 100%;
-  position: fixed;
-  z-index: 100;
+.myText {
+  border-radius: 1vw;
+  transform: scale(1.1);
+  opacity: 1;
+  transition: 3s all ease-in-out;
+}
+.myText:hover {
+  filter:blur(20px)
+  transform: scale(1.1);
+  opacity: 0;
 }
 
 /* typewriter */

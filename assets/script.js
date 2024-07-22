@@ -29,11 +29,6 @@ ScrollReveal().reveal('.scrollanime', {
   mobile: true
 });
 
-// Loader
-// const loader = document.getElementById('loader');
-// window.addEventListener("load", () => {
-//   setTimeout(() => { }, 2000)
-// })
 
 // Preload Images
 function pre_loader() {
@@ -79,7 +74,6 @@ function sendMail() {
 
 
 // Loader
-
 const preloader = document.querySelector("[data-preloader]");
 
 window.addEventListener("DOMContentLoaded", function () {

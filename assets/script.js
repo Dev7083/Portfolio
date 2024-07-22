@@ -1,9 +1,10 @@
+// Carousel
 var slideIndex = 0;
 carousel();
 
 function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
+  let i;
+  const x = document.getElementsByClassName("mySlides");
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
   }
@@ -27,3 +28,51 @@ ScrollReveal().reveal('.scrollanime', {
   reset: true,
   mobile: true
 });
+
+// Loader
+const loader = document.getElementById('loader');
+window.addEventListener("load", () => {
+  setTimeout(() => { }, 2000)
+})
+
+// Preload Images
+function preloader() {
+  if (document.getElementById) {
+    document.getElementById("img1");
+    document.getElementById("img2");
+    document.getElementById("img3");
+    document.getElementById("img4");
+    document.getElementById("img5");
+  }
+}
+function addLoadEvent(func) {
+  var oldonload = window.onload;
+  if (typeof window.onload != "function") {
+    window.onload = func;
+  } else {
+    window.onload = function () {
+      if (oldonload) {
+        oldonload();
+      }
+      func();
+    };
+  }
+}
+addLoadEvent(preloader);
+
+// Send Email
+function sendMail() {
+  const emailAddress = "ds450974@gmail.com";
+  const emailAddress2 = document.getElementById("sender").value;
+  const senderName = document.getElementById("name").value; // Sender's name (customize this)
+  const subject = "Hello from your website!";
+  const messageBody = document.getElementById("message").value;
+  const body = `Name: ${senderName}\nEmail: ${emailAddress2}\n\n${messageBody}`;
+  // Construct the mailto link
+  const mailtoLink = `mailto:${emailAddress}?subject=${encodeURIComponent(
+    subject
+  )}&body=${encodeURIComponent(body)}`;
+
+  // Open the user's email client
+  window.location.href = mailtoLink;
+}

@@ -36,8 +36,8 @@ function textcarousel() {
 // Scroll ANImation
 // ScrollReveal().reveal(".scrollanime", { delay: 200, easing: "ease-in", origin: 'left', duration: 800 });
 ScrollReveal().reveal('.scrollanime', {
-  delay: 600,
-  distance: '50px',
+  delay: 500,
+  // distance: '50px',
   duration: 700,
   easing: 'ease-in-out',
   origin: 'left',

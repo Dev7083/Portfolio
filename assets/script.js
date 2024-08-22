@@ -38,7 +38,7 @@ function textcarousel() {
 ScrollReveal().reveal('.scrollanime', {
   delay: 500,
   // distance: '50px',
-  duration: 700,
+  duration: 500,
   easing: 'ease-in-out',
   origin: 'left',
   reset: true,
